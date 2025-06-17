@@ -17,7 +17,7 @@ function q1RemoverDuplicados(nums) {
 console.log(q1RemoverDuplicados([1, 2, 2, 3, 4, 4, 5]));
 ```
 
-<a href="./q1.js">Resolução</a>
+- <a href="./q1.js">Resolução</a>
 
 # Questão 2
 
@@ -35,7 +35,7 @@ function q2ContarFrequenciaPalavra(text) {
 console.log(q2ContarFrequenciaPalavra("Hello world hello"));
 ```
 
-<a href="./q2.js">Resolução</a>
+- <a href="./q2.js">Resolução</a>
 
 # Questão 3
 
@@ -60,7 +60,7 @@ datasParaTratar.forEach(data => {
   console.log(q3TratarDatas(data));
 });
 ```
-<a href="./q3.js">Resolução</a>
+- <a href="./q3.js">Resolução</a>
 
 # Questão 4
 
@@ -77,8 +77,8 @@ function q4CriarEstruturaHtmlCss() {
 }
 
 ```
-<a href="./q4">Resolução código</a>
-<a href="https://teste-tecnico-sun4-q4.vercel.app">
+- <a href="./q4">Resolução código</a>
+- <a href="https://teste-tecnico-sun4-q4.vercel.app">Link</a>
 
 # Questão 5
 
@@ -96,5 +96,6 @@ function q5CriarLandingPage() {
   */
 }
 ```
-<a href="./q5">Resolução código</a>
-<a href="https://teste-tecnico-sun4.vercel.app">
+- <a href="./q5">Resolução código</a>
+
+- <a href="https://teste-tecnico-sun4.vercel.app">Link</a>
