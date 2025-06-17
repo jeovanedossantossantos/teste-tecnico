@@ -77,7 +77,8 @@ function q4CriarEstruturaHtmlCss() {
 }
 
 ```
-<a href="./q1.js">Resolução</a>
+<a href="./q4">Resolução código</a>
+<a href="https://teste-tecnico-sun4-q4.vercel.app">
 
 # Questão 5
 
@@ -95,4 +96,5 @@ function q5CriarLandingPage() {
   */
 }
 ```
-<a href="./q1.js">Resolução</a>
+<a href="./q5">Resolução código</a>
+<a href="https://teste-tecnico-sun4.vercel.app">
