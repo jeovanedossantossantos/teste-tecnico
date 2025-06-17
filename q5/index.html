@@ -1,0 +1,198 @@
+<!-- function q5CriarLandingPage() {
+  /**
+   * Crie uma landing page para um produto chamado Jurídico SUN4
+   * Esse produto consiste onde advogados podem contratar automações jurídicas
+   * para acompanhar seus processos.
+   * P.s.: considere que há planos com volume de casos diferentes, ex.: plano I (5000 processos), plano II (10000 processos), etc.
+   * 
+   * Atente-se a adição de chamadas, preço, descrição, formulário de contato, etc.
+   * 
+   * Diferencial: utilize tailwind css para estilizar o layout
+  */
+} -->
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jurídico SUN4</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50 text-gray-800">
+    <header class="bg-white fixed top-0  w-full z-50 shadow">
+        <nav class="mx-auto flex max-w-7xl items-center justify-between p-6 lg:px-8" aria-label="Global">
+            <div class="flex lg:flex-1">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Jurídico SUN4</span>
+                    <h2 class="text-xl font-bold text-indigo-600">Jurídico SUN4</h2>
+                </a>
+            </div>
+            <div class="flex lg:hidden">
+                <button onclick="showMenu()" type="button"
+                    class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Abrir menu</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+                    </svg>
+                </button>
+            </div>
+            <div class="hidden lg:flex lg:gap-x-12">
+                <a href="#" class="text-sm font-semibold text-gray-900">Home</a>
+                <a href="#planos" class="text-sm font-semibold text-gray-900">Planos</a>
+                <a href="#beneficios" class="text-sm font-semibold text-gray-900">Benefícios</a>
+
+                <a href="#contato" class="text-sm font-semibold text-gray-900">Contato</a>
+            </div>
+
+        </nav>
+
+        <!-- Mobile menu -->
+        <div id="mobileMenu"
+            class="hidden  lg:hidden fixed inset-y-0 right-0 z-50 bg-white p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10">
+            <div class="flex items-center justify-between">
+                <a href="#" class="-m-1.5 p-1.5">
+                    <span class="sr-only">Jurídico SUN4</span>
+                    <h2 class="text-xl font-bold text-indigo-600">Jurídico SUN4</h2>
+                </a>
+                <button onclick="removeMenu()" type="button" class="-m-2.5 rounded-md p-2.5 text-gray-700">
+                    <span class="sr-only">Fechar menu</span>
+                    <svg class="size-6" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+                        aria-hidden="true">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+            <div class="mt-6">
+                <div class="space-y-2 py-6">
+                    <a href="#" onclick="removeMenu()"
+                        class="block px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-100 rounded-lg">Home</a>
+                    <a href="#planos" onclick="removeMenu()"
+                        class="block px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-100 rounded-lg">Planos</a>
+                    <a href="#beneficios" onclick="removeMenu()"
+                        class="block px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-100 rounded-lg">Benefícios</a>
+
+                    <a href="#contato" onclick="removeMenu()"
+                        class="block px-3 py-2 text-base font-semibold text-gray-900 hover:bg-gray-100 rounded-lg">Contato</a>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-indigo-600 text-white py-20 px-6 text-center pt-24">
+        <h2 class="text-4xl font-bold mb-4">Automatize o acompanhamento de processos</h2>
+        <p class="text-lg max-w-xl mx-auto">Jurídico SUN4 é a solução ideal para escritórios de advocacia que desejam
+            ganhar tempo e produtividade com automações jurídicas inteligentes.</p>
+        <a href="#contato"
+            class="mt-6 inline-block bg-white text-indigo-600 font-semibold px-6 py-3 rounded shadow hover:bg-gray-100">Solicite
+            uma demonstração</a>
+    </section>
+
+    <section id="planos" class="py-16 px-6 max-w-7xl mx-auto pt-24">
+        <h3 class="text-3xl font-semibold text-center mb-12">Escolha o plano ideal</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-white p-6 rounded-xl shadow text-center">
+                <h4 class="text-xl font-bold mb-2">Plano I</h4>
+                <p class="text-gray-600 mb-4">Até 5.000 processos</p>
+                <p class="text-3xl font-extrabold text-indigo-600 mb-4">R$ 99/mês</p>
+                <ul class="text-sm text-left mb-4">
+                    <li>✔ Acompanhamento automático</li>
+                    <li>✔ Alertas por e-mail</li>
+                    <li>✔ Suporte básico</li>
+                </ul>
+                <a href="#contato" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Contratar</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow text-center border-2 border-indigo-600">
+                <h4 class="text-xl font-bold mb-2">Plano II</h4>
+                <p class="text-gray-600 mb-4">Até 10.000 processos</p>
+                <p class="text-3xl font-extrabold text-indigo-600 mb-4">R$ 179/mês</p>
+                <ul class="text-sm text-left mb-4">
+                    <li>✔ Todos os recursos do Plano I</li>
+                    <li>✔ Relatórios avançados</li>
+                    <li>✔ Suporte prioritário</li>
+                </ul>
+                <a href="#contato" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Contratar</a>
+            </div>
+
+            <div class="bg-white p-6 rounded-xl shadow text-center">
+                <h4 class="text-xl font-bold mb-2">Plano III</h4>
+                <p class="text-gray-600 mb-4">Processos ilimitados</p>
+                <p class="text-3xl font-extrabold text-indigo-600 mb-4">Sob consulta</p>
+                <ul class="text-sm text-left mb-4">
+                    <li>✔ Todos os recursos do Plano II</li>
+                    <li>✔ Integrações personalizadas</li>
+                    <li>✔ Suporte dedicado</li>
+                </ul>
+                <a href="#contato" class="bg-indigo-600 text-white px-4 py-2 rounded hover:bg-indigo-700">Solicitar
+                    proposta</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="beneficios" class="bg-gray-100 py-16 px-6 pt-24">
+        <div class="max-w-5xl mx-auto text-center">
+            <h3 class="text-3xl font-semibold mb-6">Benefícios do Jurídico SUN4</h3>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+                <div>
+                    <h4 class="font-bold mb-2">Automatização total</h4>
+                    <p>Economize tempo com alertas automáticos de movimentação processual.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2">Redução de custos</h4>
+                    <p>Menos tempo gasto em tarefas repetitivas, mais foco no cliente.</p>
+                </div>
+                <div>
+                    <h4 class="font-bold mb-2">Escalabilidade</h4>
+                    <p>Acompanhe milhares de processos com segurança e eficiência.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-16 px-6 bg-white pt-24">
+        <div class="max-w-2xl mx-auto">
+            <h3 class="text-3xl font-semibold text-center mb-6">Entre em contato</h3>
+            <form class="space-y-6">
+                <div>
+                    <label for="nome" class="block font-medium mb-1">Nome completo</label>
+                    <input type="text" id="nome" name="nome" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded" placeholder="João da Silva">
+                </div>
+                <div>
+                    <label for="email" class="block font-medium mb-1">E-mail</label>
+                    <input type="email" id="email" name="email" required
+                        class="w-full px-4 py-2 border border-gray-300 rounded" placeholder="joao@email.com">
+                </div>
+                <div>
+                    <label for="mensagem" class="block font-medium mb-1">Mensagem</label>
+                    <textarea id="mensagem" name="mensagem" rows="4"
+                        class="w-full px-4 py-2 border border-gray-300 rounded"
+                        placeholder="Descreva sua necessidade ou dúva..."></textarea>
+                </div>
+                <div class="text-center">
+                    <button type="submit"
+                        class="bg-indigo-600 text-white font-semibold px-6 py-2 rounded hover:bg-indigo-700">Enviar</button>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white text-center py-6">
+        <p class="text-sm">&copy; 2025 Jurídico SUN4. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,53 @@
+<!-- function q4CriarEstruturaHtmlCss() {
+  /**
+   * Crie uma estrutura básica de layout utilizando `display: flex` para criar um grid responsivo com 3 colunas.
+   * 
+   * - A estrutura deve conter um cabeçalho, uma área de conteúdo principal com 3 colunas e um rodapé.
+   * - Cada coluna deve conter um texto ou um número que indique sua posição (ex: "Coluna 1").
+   * - A estrutura deve ser responsiva, onde em telas menores as 3 colunas devem se empilhar verticalmente.
+   * - **Diferencial:** Utilize Tailwind CSS para estilizar o layout.
+ */
+} -->
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Questão 4</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex flex-col">
+
+    <header class="bg-blue-600 text-white p-4 text-center text-xl font-bold">
+        Crie uma estrutura básica de layout utilizando `display: flex` para criar um grid responsivo com 3 colunas.
+    </header>
+
+    <main class="flex-1 p-4">
+        <div class="p-6 rounded flex flex-col items-center ">
+            <label for="numero" class="block text-gray-700 font-medium mb-2 w-80">Escolha um número de cards:</label>
+            <select id="numero" onchange="render()"
+                class="w-80 p-2 border border-gray-300 rounded focus:outline-none focus:ring-2 focus:ring-blue-500 ">
+                <option value="3">3</option>
+                <option value="6">6</option>
+                <option value="9">9</option>
+                <option value="12">12</option>
+            </select>
+        </div>
+        <div id="principal" class="flex-css ">
+    </main>
+
+    <footer class="bg-blue-600 text-white p-4 text-center">
+        <h2>Teste Tecnico da Sun4 para Estágio - Front-End</h2>
+        <h2>Copyright © 2025. Todos os Direitos Reservados</h2>
+    </footer>
+
+    <script src="./scripts.js"></script>
+</body>
+
+</html>
